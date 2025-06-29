@@ -23,17 +23,15 @@ Example 3:
     Explanation: The only possible triplet sums up to 0.
 '''
 
-'''
-Intuition:
-    To fix the current iterating number, nums[i], and get two numbers that sum up to -num[i].
-    We can use two sum to find the values that sum up to -nums[i].
-
-Logic:
-    1. Sort the nums array.
-    2. Loop through the entire array.
-    3. Find the two sum of the inverse of the current iterating number, i.e., nums[j] + nums[k] = -nums[i]
-    4. Since we do not want duplicate, we can skip any iterating number that is the same as the previous iterating number, i.e., nums[i] == nums[i-1]
-'''
+# Intuition:
+#    To fix the current iterating number, nums[i], and get two numbers that sum up to -num[i].
+#    We can use two sum to find the values that sum up to -nums[i].
+#
+# Logic:
+#    1. Sort the nums array.
+#    2. Loop through the entire array.
+#    3. Find the two sum of the inverse of the current iterating number, i.e., nums[j] + nums[k] = -nums[i]
+#    4. Since we do not want duplicate, we can skip any iterating number that is the same as the previous iterating number, i.e., nums[i] == nums[i-1]
 
 # TC: O(n^2) where n is the length of the input array
 # - Sorting takes O(n log n) time, and outer loops takes O(n) time and inner loop takes O(n) time.

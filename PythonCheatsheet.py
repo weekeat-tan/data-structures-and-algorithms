@@ -14,6 +14,8 @@ def number():
     # or simply
     num = float("inf")
 
+    # to get the quotient and the remainder
+    quotient, remainder = divmod(2578, 10) # returns (257, 8) => quotient: 257, remainder: 8
 
 '''
 Sorting

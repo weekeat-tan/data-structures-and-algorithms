@@ -17,9 +17,17 @@ def number():
     # to get the quotient and the remainder
     quotient, remainder = divmod(2578, 10) # returns (257, 8) => quotient: 257, remainder: 8
 
-'''
-Sorting
-'''
+''' String '''
+# Converting list to string
+"".join(["a", "b", "c"])
+"".join(str(element) for element in [1, 2, 3])
+
+
+''' List '''
+reversed(["a", "b", "c"]) # Return the list in the reversed order.
+["a", "b", "c"].reverse() # Reverse the order of the list
+
+''' Sorting '''
 num = [1,2,3,4]
 
 # Sorting that is in-place (the list itself is modified) and stable (the order of two equal elements is mainted), using Timsort.
